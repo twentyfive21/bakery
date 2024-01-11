@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+/** All text font-family: 'Montserrat', sans-serif; weights: 400, 500, 600**/
+
+/** For HEADINGS font-family: 'Playfair Display', sans-serif; weights: 600 & 700 **/
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --tlj-green: #395542;
+  --peru: #ac845c;
+  --white: white;
+  --tlj-gold: #f1dab2;
+  --antique-white: #eddecd;
+  --tlj-orange: #ff6a13;
+}
+
+a {
+    text-decoration: none;
+}
