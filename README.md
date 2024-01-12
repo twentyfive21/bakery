@@ -30,6 +30,9 @@
 # Acknowledgments
 #### This project is an educational exercise, and all content, including images and text, is sourced from [To Le Jours](https://www.tljus.com/menus/cakes) we do not claim ownership of any of the content. We express gratitude for their resources and use them solely for learning and skill development.
 
+* Photo by Cats Coming from Pexels: https://www.pexels.com/photo/slice-of-loaf-bread-with-dog-face-920220/
+* Photo by Karolina Grabowska from Pexels: https://www.pexels.com/photo/close-up-photo-of-bread-6660187/
+
 * Note: It is essential to comply with the terms and conditions of the To Le Jours website regarding the use of their content for educational purposes. To run the project locally, clone the repository and open the index.html file in your preferred web browser. Feel free to contribute, provide feedback, or report issues through the project's repository. Happy coding!
 
 
