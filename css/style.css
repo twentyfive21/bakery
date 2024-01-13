@@ -59,8 +59,31 @@ a {
   padding-right: 20px;
 }
 
+/** Footer CSS **/
 .footer-bg{
   background-color: var(--tlj-green);
+}
+
+.footer-bg li a {
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 500;
+}
+.footer-header-gold {
+  color: var(--tlj-gold);
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+.hr-line-footer {
+  border-bottom: .5px solid var(--white);
+  width: 100vw;
+}
+
+i {
+  padding-right: 8px;
+  font-size: 13px;
 }
 
 /**MEDIA QUERIES START **/
