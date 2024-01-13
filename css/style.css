@@ -21,7 +21,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 /**Header CSS **/
@@ -68,6 +68,12 @@ a {
   color: var(--white);
   font-size: 11px;
   font-weight: 500;
+}
+footer a:hover {
+  color: var(--tlj-gold);
+}
+.non-hover:hover {
+  color: var(--white);
 }
 .footer-header-gold {
   color: var(--tlj-gold);
