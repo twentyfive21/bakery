@@ -5,10 +5,10 @@
 /** For HEADINGS font-family: 'Playfair Display', sans-serif; weights: 600 & 700 **/
 
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -21,5 +21,71 @@
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+/**Header CSS **/
+
+.header-container-padding {
+  padding: 10px 50px;
+  background-color: var(--white);
+}
+
+.header-hamburger, .header-hamburger:focus{
+  border: none;
+  box-shadow: none;
+}
+
+
+/**make non draggable **/
+.header-logo {
+  width: 200px;
+}
+
+
+.navbar-nav-ul {
+  margin-left: 25vw;
+}
+
+.navbar-nav-ul li a, .navbar-text {
+  text-transform: uppercase;
+  color: var(--tlj-green);
+  font-size: 1.1rem;
+  font-weight: 600;
+
+}
+
+.collapse .navbar-text span {
+  padding-right: 20px;
+}
+
+.footer-bg{
+  background-color: var(--tlj-green);
+}
+
+/**MEDIA QUERIES START **/
+
+
+/**HEADER STYLES **/
+@media only screen and (max-width: 990px) {
+  .header-container-padding {
+    padding: 5px 10px;
+  }
+
+  .navbar-nav-ul {
+    margin-left: 0%;
+  }
+
+  .header-logo {
+    width: 150px;
+  }
+
+  .navbar-nav-ul li a, .navbar-text {
+    font-size: 1rem;
+
+  }
+
+  .collapse .navbar-text span {
+    display: none;
+  }
 }
