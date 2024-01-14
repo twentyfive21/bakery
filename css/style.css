@@ -58,6 +58,10 @@ a {
   padding-right: 20px;
 }
 
+.contact-us-green a {
+  color: var(--tlj-green);
+}
+
 /** Footer CSS **/
 .footer-bg {
   background-color: var(--tlj-green);
