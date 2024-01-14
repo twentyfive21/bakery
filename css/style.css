@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap");
 
 /** All text font-family: 'Montserrat', sans-serif; weights: 400, 500, 600**/
 
@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -21,7 +21,7 @@
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 /**Header CSS **/
@@ -31,28 +31,27 @@ a {
   background-color: var(--white);
 }
 
-.header-hamburger, .header-hamburger:focus{
+.header-hamburger,
+.header-hamburger:focus {
   border: none;
   box-shadow: none;
 }
-
 
 /**make non draggable **/
 .header-logo {
   width: 200px;
 }
 
-
 .navbar-nav-ul {
   margin-left: 25vw;
 }
 
-.navbar-nav-ul li a, .navbar-text {
+.navbar-nav-ul li a,
+.navbar-text {
   text-transform: uppercase;
   color: var(--tlj-green);
   font-size: 1.1rem;
   font-weight: 600;
-
 }
 
 .collapse .navbar-text span {
@@ -60,7 +59,7 @@ a {
 }
 
 /** Footer CSS **/
-.footer-bg{
+.footer-bg {
   background-color: var(--tlj-green);
 }
 
@@ -83,7 +82,7 @@ footer a:hover {
   letter-spacing: 0.8px;
 }
 .hr-line-footer {
-  border-bottom: .5px solid var(--white);
+  border-bottom: 0.5px solid var(--white);
   width: 100vw;
 }
 
@@ -93,7 +92,6 @@ i {
 }
 
 /**MEDIA QUERIES START **/
-
 
 /**HEADER STYLES **/
 @media only screen and (max-width: 990px) {
@@ -109,9 +107,9 @@ i {
     width: 150px;
   }
 
-  .navbar-nav-ul li a, .navbar-text {
+  .navbar-nav-ul li a,
+  .navbar-text {
     font-size: 1rem;
-
   }
 
   .collapse .navbar-text span {
