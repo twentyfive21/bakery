@@ -1,4 +1,10 @@
 import data from './data.js';
 
-// Now you can use the 'data' object in this file
-console.log(data);
+const categoryLink = document.querySelectorAll(".category-image-card");
+
+
+categoryLink.forEach((item)=>{
+item.addEventListener("mouseover",()=>{
+    console.log("hi")
+})
+})
