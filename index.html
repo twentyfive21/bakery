@@ -13,89 +13,130 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <!--*NAV BAR*-->
     <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid header-container-padding">
-    <img src="./images/main-page/header-dark.png" alt="logo" class="header-logo"/>
-    <button class="navbar-toggler header-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Breads</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Cakes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Beverages</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        <span>|</span>contact us 
-      </span>
-    </div>
-  </div>
-</nav>
-</nav>
+      <div class="container-fluid header-container-padding">
+        <a href="/index.html">
+          <img
+            src="./images/main-page/header-dark.png"
+            alt="logo"
+            class="header-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler header-hamburger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/menus.html"
+                >Breads</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/menus.html">Cakes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/menus.html">Beverages</a>
+            </li>
+          </ul>
+          <div class="navbar-text contact-us-green">
+            <span> | </span>
+            <a href="https://github.com/twentyfive21/bakery" target="_blank">
+              contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--*NAV BAR END*-->
 
- <div class="px-4 py-5 my-5 text-center">
-    <img class="d-block mx-auto mb-4" src="/images/pastry/apple-jam.jpeg" alt="" width="72" height="57">
-    <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+    <!--*HER0 SECTION*-->
+    <div class="video-hero-container">
+      <video autoplay loop muted playsinline reverse>
+        <source
+          src="./images/menu-headers/videos/header-video.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="content">
+        <img src="/images/menu-headers/footer-logo.svg" alt="hero-logo" />
+        <h2>Freshly Baked, Everyday</h2>
+        <button><a href="#">View Menu</a></button>
       </div>
     </div>
-  </div>
 
-  <div class="container-fluid footer-bg custom-footer">
-  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top">
-    <div class="col mb-3">
-      <img src="/images/menu-headers/footer-logo.svg" />
-      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-      </a>
-     <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-     <i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
-     <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+    <!--*HER0 SECTION END*-->
+
+    <!--*FOOTER SECTION*-->
+    <div class="container-fluid footer-bg custom-footer">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top"
+      >
+        <div class="col mb-3">
+          <img src="/images/menu-headers/footer-logo.svg" />
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+          >
+          </a>
+          <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+          <i class="fa-brands fa-square-instagram" style="color: #ffffff"></i>
+          <i class="fa-brands fa-linkedin" style="color: #ffffff"></i>
+        </div>
+
+        <div class="col mb-3"></div>
+
+        <div class="col mb-3">
+          <h5 class="footer-header-gold">Bakery</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="p-0">Bread</a></li>
+            <li class="nav-item mb-2"><a href="#" class="p-0">Cakes</a></li>
+            <li class="nav-item mb-2"><a href="#" class="p-0">Pastry</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5 class="footer-header-gold">Beverages</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="p-0">Coffee</a></li>
+            <li class="nav-item mb-2">
+              <a href="#" class="p-0">Tea & More</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="p-0">Blended</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5 class="footer-header-gold">Company</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="p-0">Home</a></li>
+            <li class="nav-item mb-2">
+              <a href="#" class="p-0">Contact Us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="p-0 non-hover"
+                >&copy; 2024 TOUS les JOURS International Corp. All Rights
+                Reserved.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hr-line-footer"></div>
+      </footer>
     </div>
 
-    <div class="col mb-3">
-
-    </div>
-
-    <div class="col mb-3">
-      <h5 class="footer-header-gold">Bakery</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="p-0">Bread</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0">Cakes</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0">Pastry</a></li>
-      </ul>
-    </div>
-
-    <div class="col mb-3">
-      <h5 class="footer-header-gold">Beverages</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="p-0">Coffee</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0">Tea & More</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0">Blended</a></li>
-      </ul>
-    </div>
-
-    <div class="col mb-3">
-      <h5 class="footer-header-gold">Company</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="p-0">Home</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0">Contact Us</a></li>
-        <li class="nav-item mb-2"><a href="#" class="p-0 non-hover">&copy; 2024 TOUS les JOURS International Corp. All Rights Reserved.</a></li>
-      </ul>
-    </div>
-    <div class="hr-line-footer"></div>
-  </footer>
-</div>
-
+    <!--*FOOTER SECTION END*-->
 
     <script type="module" src="./scripts/script.js"></script>
     <script type="module" src="./scripts/data.js"></script>
@@ -104,6 +145,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/e36fb19258.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e36fb19258.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
