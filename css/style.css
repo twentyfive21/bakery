@@ -119,6 +119,116 @@ a {
   color: var(--antique-white);
 }
 
+
+.bakery-section-menu{
+  background-color: var(--peru);
+  color: var(--antique-white);
+  padding-bottom: 100px;
+}
+
+.beverage-section-menu{
+  background-color: var(--white);
+  color: var(--tlj-green);
+    padding-bottom: 100px;
+}
+
+
+.food-top-level-header{
+  color: var(--antique-white);
+  text-align: center;
+  letter-spacing: .05em;
+  margin-bottom: 50px;
+  font-size: 3.3em;
+  font-weight: 700;
+  line-height: 1;
+  position: static;
+  font-family: Playfair Display;
+}
+
+.food-top-level-desc{
+  font-family: Gotham,sans-serif;
+  font-size: 18px;
+  line-height: 2em;
+  color: var(--antique-white);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.beverage-top-level-header{
+  color: var(--tlj-green);
+  text-align: center;
+  letter-spacing: .05em;
+  margin-bottom: 50px;
+  font-size: 3.3em;
+  font-weight: 700;
+  line-height: 1;
+  position: static;
+  font-family: Playfair Display;
+}
+
+.beverage-top-level-desc{
+  font-family: Gotham,sans-serif;
+  font-size: 18px;
+  line-height: 2em;
+  color: var(--tlj-green);
+  text-align: center;
+ font-family: "Montserrat", sans-serif;
+}
+
+.category-header-hover{
+  color: var(--antique-white);
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: .015em;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.category-hover-text{
+ text-align: center;
+letter-spacing: .12em;
+text-transform: uppercase;
+margin-bottom: 0;
+margin-top: .6rem;
+font-size: 1vw;
+font-weight: 600;
+line-height: 1.3em;
+border-style: solid;
+border-width: 0 0 1px;
+border-color: black black var(--antique-white);
+color: var(--antique-white);
+padding-bottom: 5px;
+text-decoration: none;
+}
+
+#beverage-color-override{
+  color: var(--tlj-green);
+  border-color: black black var(--tlj-green);
+}
+
+
+
+.category-image-card{
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: transform 1s ease;
+}
+
+.category-image-card:hover {
+    transform: translateY(-15px);
+}
+
+
+.category-image-border-radius{
+    border-radius: 8px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+
 /** Footer CSS **/
 .footer-bg {
   background-color: var(--tlj-green);
