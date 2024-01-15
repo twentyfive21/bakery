@@ -153,7 +153,11 @@ footer a:hover {
 
 i {
   padding-right: 8px;
-  font-size: 13px;
+  font-size: 15px;
+}
+
+.nav-item a, footer .col a{
+  -webkit-user-drag: none;
 }
 
 /**MEDIA QUERIES START **/
