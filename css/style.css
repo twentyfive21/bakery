@@ -123,6 +123,56 @@ a {
   color: var(--antique-white);
 }
 
+
+/** Our story CSS **/
+
+.story-main-container {
+  display: flex;
+  align-items: center;
+  color: var(--tlj-green);
+  height: 100vh;
+  padding-right: 50px;
+}
+.story-main-container h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+}
+.story-main-container h3 {
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 0.3rem;
+  font-size: 36px;
+}
+.story-left-imgs {
+  display: flex;
+}
+.story-left-imgs img {
+  height: 52vh;
+  width: 30vw;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.story-left-col-imgs {
+  display: flex;
+  flex-direction: column;
+}
+.story-left-col-imgs img {
+  height: 250px;
+  width: 200px;
+  margin: 20px 20px 0px 20px;
+}
+.story-left-col-imgs :first-child {
+ margin-top: 50px;
+}
+.story-right-text {
+  line-height: 2em;
+  padding-bottom: 90px;
+}
+
+/** Our story CSS END **/
+
+/** Bakery Menu items CSS Start Index **/
+
 .bakery-section-menu {
   background-color: var(--peru);
   color: var(--antique-white);
@@ -234,6 +284,9 @@ a {
   object-fit: cover;
 }
 
+/** Bakery Menu items CSS End Index **/
+
+
 
 /** Footer CSS **/
 .footer-bg {
@@ -276,48 +329,6 @@ i {
 footer .col a {
   -webkit-user-drag: none;
 }
-
-/** Our story CSS **/
-
-.story-main-container {
-  display: flex;
-  align-items: center;
-  color: var(--tlj-green);
-  height: 100vh;
-  padding-right: 50px;
-}
-.story-main-container h2 {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 15px;
-}
-.story-main-container h3 {
-  font-family: 'Playfair Display', sans-serif;
-  letter-spacing: 0.3rem;
-  font-size: 36px;
-}
-.story-left-imgs {
-  display: flex;
-}
-.story-left-imgs img {
-  height: 52vh;
-  width: 30vw;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.story-left-col-imgs {
-  display: flex;
-  flex-direction: column;
-}
-.story-left-col-imgs img {
-  height: 250px;
-  width: 200px;
-  margin: 0px 30px 0px 20px;
-}
-.story-left-col-imgs :first-child {
-  margin: 50px 30px 20px 20px;
-}
-/** Our story CSS END **/
 
 /**MEDIA QUERIES START **/
 
@@ -362,24 +373,38 @@ footer .col a {
 @media only screen and (max-width: 990px) {
   .story-main-container {
     height: auto;
+    padding: 120px 35px;
     flex-direction: column-reverse;
-    padding: 30px 50px;
-  }
-  .story-left-imgs img {
-    width: 60%;
-    height: 100%;
-  }
-  .story-left-col-imgs img {
-    width: 50%;
-    height: 100%;
-    margin: 0px 10px 10px 20px;
-  }
+    }
+    .story-left-imgs img{
+      width: 55%;
+      height: 520px;
+    }
+    .story-left-col-imgs img {
+      width: 90%;
+      height: 275px;
+    }
 }
+
 @media only screen and (max-width: 500px) {
-  .story-main-container h3 {
-    font-size: 2rem;
-  }
-}
+      .story-main-container h3 {
+        font-size: 2rem;
+      }
+      .story-left-imgs img{
+        width: 90%;
+        height: 275px;
+      }
+      .story-left-imgs {
+        flex-direction: column;
+        align-items: center;
+      }
+      .story-left-col-imgs :first-child {
+        margin-top: 10px;
+       }
+       .story-left-col-imgs{
+        margin-top: 10px;
+       }
+    }
 
 
 /** MENU ITEMS **/
@@ -395,12 +420,12 @@ footer .col a {
 }
 
 
-
-
-
 /** footer **/
 @media only screen and (max-width: 990px) {
 .footer-logo-img{
   width: auto;
 }
 }
+   
+
+
