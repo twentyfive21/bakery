@@ -233,7 +233,6 @@ a {
   font-size: 24px;
   text-align: center;
   letter-spacing: 0.015em;
-  margin-top: 0;
   font-weight: 600;
 }
 
@@ -286,6 +285,34 @@ a {
 
 /** Bakery Menu items CSS End Index **/
 
+
+
+
+/** Newsletter CSS START**/
+
+.newsletter-header{
+  color: var(--tlj-green);
+  font-family: 'Playfair Display';
+}
+
+.newsletter-text{
+   color: var(--tlj-green);
+   font-weight: 500;
+}
+
+.newsletter-button{
+  background-color: var(--tlj-green);
+  color: var(--tlj-gold);
+  padding: 5px;
+  width: 200px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.newsletter-button:hover{
+  background-color: var(--tlj-green);
+   color: var(--tlj-gold);
+}
 
 
 /** Footer CSS **/
