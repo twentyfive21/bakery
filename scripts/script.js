@@ -1,10 +1,14 @@
 import data from './data.js';
 
-const categoryLink = document.querySelectorAll(".category-image-card");
+const hoverTexts = document.querySelectorAll(".category-hover-text");
 
+hoverTexts.forEach((aLink)=>{
+    // aLink.addEventListener("mouseover", ()=>{
+    //     aLink.style.display = "none";
+    // })
 
-categoryLink.forEach((item)=>{
-item.addEventListener("mouseover",()=>{
-    console.log("hi")
+     aLink.addEventListener("mouseover", ()=>{
+        aLink.style.display = "block";
+    })
 })
-})
+
