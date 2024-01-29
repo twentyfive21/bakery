@@ -286,6 +286,18 @@ a {
 
 /** Bakery Menu items CSS End Index **/
 
+/** CAROUSEL START **/
+.carousel-box-size {
+  margin: 0 auto;
+  width: 87vw;
+}
+.carousel-img-sizing img {
+  object-fit: cover;
+  height: 55vh;
+  border-radius: 8px;
+}
+
+/** CAROUSEL START END **/
 
 
 /** Footer CSS **/
