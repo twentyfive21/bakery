@@ -259,6 +259,7 @@ a {
 .category-image-card:hover .category-hover-text {
   display: block;
   opacity: 1;
+  
 }
 
 #beverage-color-override {
@@ -313,6 +314,74 @@ a {
   background-color: var(--tlj-green);
    color: var(--tlj-gold);
 }
+
+/* Add this to your existing styles or create a new CSS file */
+
+.modal-content {
+  background-color: var(--antique-white);
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.subscribe-message {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--tlj-green);
+}
+
+.modal-button-click {
+  background-color: var(--peru);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-button-click:hover {
+  background-color: var(--tlj-green);
+  color: var(--tlj-gold);
+}
+
+
+
+/**SECOND HTML PAGE MENU CSS START**/
+
+/** MENU HTML HERO SECTION **/
+
+.menu-page-hero{
+  height: 60vh;
+  background-image: url("/images/menu-headers/coffee-header.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+
+}
+
+.menu-page-heading{
+  color: var(--antique-white);
+  -webkit-text-stroke-color: var(--tlj-gold);
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  font-family: 'Playfair Display';
+  font-size: 58px;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**SECOND HTML PAGE MENU CSS END!!!**/
+
+
 
 
 /** Footer CSS **/

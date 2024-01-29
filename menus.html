@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <h1>Menus | TOUS LES JOURS</h1>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid header-container-padding">
         <a href="/index.html">
@@ -51,18 +50,74 @@
       </div>
     </nav>
     
-     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/images/pastry/apple-jam.jpeg" alt="" width="100%" height="auto" id="hero-example">
-        <h1 class="display-5 fw-bold text-body-emphasis hero-text">Centered hero</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-          </div>
+    <!--**MENU HERO SECTION**-->
+
+  <div class="position-relative overflow-hidden text-center menu-page-hero d-flex align-items-center justify-content-center">
+    <div class="col-md-6 top-0 my-5">
+        <h2 class="menu-page-heading">Designed for engineers</h2>
+    </div>
+</div>
+
+
+
+
+       <!--*FORM NEWSLETTER*-->
+
+  <div class="card text-center border-0 py-5">
+    <div class="card-body">
+      <h2 class="card-title fw-bold fs-1 newsletter-header">Join Our Newsletter</h2>
+      <p class="card-text py-3 fs-5 newsletter-text">Stay up to date on the latest news and openings, menu items and
+        more.</p>
+      <div class="container vstack gap-3 align-items-center">
+        <div class="input-group flex-nowrap w-75">
+          <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="First Name"
+            aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <div class="input-group flex-nowrap w-75">
+          <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="Last Name"
+            aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <div class="input-group flex-nowrap w-75">
+          <input type="email" class="form-control border-dark-subtle rounded-3" placeholder="Email"
+            aria-label="Username" aria-describedby="addon-wrapping">
         </div>
       </div>
-    
+
+
+    </div>
+    <div class="container d-flex align-items-center justify-content-center flex-column">
+      <div class="form-check w-auto">
+        <input class="form-check-inpu" type="checkbox" value="" id="flexCheckIndeterminate">
+        <label class="form-check-label" for="flexCheckIndeterminate">
+          I have read and agree to your Terms of Use and Privacy Policy
+        </label>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn mt-3 newsletter-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Subscribe
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+  <div class="modal-body p-0 m-4">
+    <p class="subscribe-message">🎉 Thank you for Subscribing! 🎉<br>Check your email for special coupons and events.</p>
+     <button type="button" class="btn modal-button-click" data-bs-dismiss="modal">Got it!</button>
+  </div>
+  <!-- <div class="modal-footer border-0 d-flex justify-content-center">
+    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+  </div> -->
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!--**FOOTER SECTION**-->
       <div class="container-fluid footer-bg custom-footer">
         <footer
           class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top"

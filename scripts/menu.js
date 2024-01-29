@@ -1,8 +1,5 @@
 import data from './data.js';
 
-const heroImage = document.getElementById("hero-example");
-const heroText = document.querySelector(".hero-text");
-
 
 //*Make a function that takes one param.
 //* window.location.search: This gets the query string part of the URL ?q=breads).
@@ -24,6 +21,3 @@ function getQueryParam(key) {
     }
 
     console.log(data)
-
-    heroImage.src = data[menuType].headerImage
-    heroText.innerText = menuType;
