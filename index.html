@@ -12,39 +12,41 @@
 
 <body>
   <!--*NAV BAR*-->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid header-container-padding">
-      <a href="/index.html">
-        <img src="./images/main-page/header-dark.png" alt="logo" class="header-logo" />
-      </a>
-      <button class="navbar-toggler header-hamburger" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/menus.html">Breads</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/menus.html">Cakes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/menus.html">Beverages</a>
-          </li>
-        </ul>
-        <div class="navbar-text contact-us-green">
-          <span id="navbar-lg-contact-btn"> | </span>
-          <a href="https://github.com/twentyfive21/bakery" target="_blank" id="navbar-lg-contact-btn">
-            contact us
-          </a>
-          <a href="https://github.com/twentyfive21/bakery" target="_blank" class="navbar-contact-btn">
-            contact us
-          </a>
-        </div>
+ <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid header-container-padding">
+    <a href="/index.html">
+      <img src="./images/main-page/header-dark.png" alt="logo" class="header-logo" />
+    </a>
+    <button class="navbar-toggler header-hamburger" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul justify-content-around">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/menus.html?q=bread">Breads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus.html?q=cakes">Cakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus.html?q=coffee">Beverages</a>
+        </li>
+      </ul>
+      <div class="navbar-text contact-us-green">
+        <span id="navbar-lg-contact-btn"> | </span>
+        <a href="https://github.com/twentyfive21/bakery" target="_blank" id="navbar-lg-contact-btn">
+          contact us
+        </a>
+        <a href="https://github.com/twentyfive21/bakery" target="_blank" class="navbar-contact-btn">
+          contact us
+        </a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
 
   <!--*HER0 SECTION*-->
   <div class="video-hero-container">
@@ -108,7 +110,7 @@
               <div class="card-body">
                 <div class="d-flex flex-column align-items-center">
                   <h4 class="category-header-hover">Breads</h3>
-                    <a href="#" class="category-hover-text">View Breads</a>
+                   <a href="/menus.html?q=bread" class="category-hover-text">View Breads</a>
                 </div>
               </div>
             </div>
@@ -120,7 +122,7 @@
               <div class="card-body">
                 <div class="d-flex flex-column align-items-center">
                   <h4 class="category-header-hover">Cakes</h4>
-                  <a href="" class="category-hover-text">View Cakes</a>
+                  <a  href="/menus.html?q=cakes" class="category-hover-text">View Cakes</a>
                 </div>
 
               </div>
@@ -133,7 +135,7 @@
               <div class="card-body">
                 <div class="d-flex flex-column align-items-center">
                   <h4 class="category-header-hover">Pastry</h3>
-                    <a href="" class="category-hover-text">View Pastries & Pies</a>
+                    <a  href="/menus.html?q=pastry" class="category-hover-text">View Pastries & Pies</a>
                 </div>
               </div>
             </div>
@@ -142,7 +144,7 @@
       </div>
     </div>
 
-  </div class="bakery-section-menu">
+  </div>
 
   <!--*beverage*-->
 
@@ -169,7 +171,7 @@
               <div class="card-body">
                 <div class="d-flex flex-column align-items-center">
                   <h4 class="category-header-hover" id="beverage-color-override">Coffee</h3>
-                    <a href="" class="category-hover-text" id="beverage-color-override">View Hot & Iced Coffee's</a>
+                    <a href="/menus.html?q=coffee" class="category-hover-text" id="beverage-color-override">View Hot & Iced Coffee's</a>
                 </div>
               </div>
             </div>
@@ -181,7 +183,7 @@
               <div class="card-body">
                 <div class="d-flex flex-column align-items-center">
                   <h4 class="category-header-hover" id="beverage-color-override">Tea & More</h4>
-                  <a href="" class="category-hover-text" id="beverage-color-override">View Hot & Iced Tea's</a>
+                  <a  href="/menus.html?q=tea" class="category-hover-text" id="beverage-color-override">View Hot & Iced Tea's</a>
                 </div>
 
               </div>
@@ -194,7 +196,7 @@
               <div class="card-body">
                 <div class="d-flex flex-column align-items-center">
                   <h4 class="category-header-hover" id="beverage-color-override">Blended</h3>
-                    <a href="" class="category-hover-text" id="beverage-color-override">View Blended Drinks</a>
+                    <a href="/menus.html?q=blended" class="category-hover-text" id="beverage-color-override">View Blended Drinks</a>
                 </div>
               </div>
             </div>
@@ -227,36 +229,57 @@
 
   <div class="card text-center border-0 py-5">
     <div class="card-body">
-      <h2 class="card-title fs-2">Join Our Newsletter</h2>
-      <p class="card-text pt-3 fs-5">Stay up to date on the latest news and openings, menu items and more.</p>
+      <h2 class="card-title fw-bold fs-1 newsletter-header">Join Our Newsletter</h2>
+      <p class="card-text py-3 fs-5 newsletter-text">Stay up to date on the latest news and openings, menu items and
+        more.</p>
       <div class="container vstack gap-3 align-items-center">
         <div class="input-group flex-nowrap w-75">
-          <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="First Name" aria-label="Username"
-            aria-describedby="addon-wrapping">
+          <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="First Name"
+            aria-label="Username" aria-describedby="addon-wrapping">
         </div>
         <div class="input-group flex-nowrap w-75">
-          <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="Last Name" aria-label="Username"
-            aria-describedby="addon-wrapping">
+          <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="Last Name"
+            aria-label="Username" aria-describedby="addon-wrapping">
         </div>
         <div class="input-group flex-nowrap w-75">
-          <input type="email" class="form-control border-dark-subtle rounded-3" placeholder="Email" aria-label="Username"
-            aria-describedby="addon-wrapping">
+          <input type="email" class="form-control border-dark-subtle rounded-3" placeholder="Email"
+            aria-label="Username" aria-describedby="addon-wrapping">
         </div>
       </div>
-  
-      
+
+
     </div>
-      <div class="container d-flex align-items-center justify-content-center">
-            <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-  <label class="form-check-label" for="flexCheckIndeterminate">
-    I have read and agree to your Terms of Use and Privacy Policy
-  </label>
-  
-</div>
+    <div class="container d-flex align-items-center justify-content-center flex-column">
+      <div class="form-check w-auto">
+        <input class="form-check-inpu" type="checkbox" value="" id="flexCheckIndeterminate">
+        <label class="form-check-label" for="flexCheckIndeterminate">
+          I have read and agree to your Terms of Use and Privacy Policy
+        </label>
       </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn mt-3 newsletter-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Subscribe
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+  <div class="modal-body p-0 m-4">
+    <p class="subscribe-message">🎉 Thank you for Subscribing! 🎉<br>Check your email for special coupons and events.</p>
+     <button type="button" class="btn modal-button-click" data-bs-dismiss="modal">Got it!</button>
   </div>
-  
+  <!-- <div class="modal-footer border-0 d-flex justify-content-center">
+    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+  </div> -->
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <!--*FOOTER SECTION*-->
@@ -265,7 +288,7 @@
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top">
       <div class="col mb-3">
         <a href="/index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <img src="/images/menu-headers/footer-logo.svg" alt="tous les jours logo" class="footer-logo-img"/>
+          <img src="/images/menu-headers/footer-logo.svg" alt="tous les jours logo" class="footer-logo-img" />
         </a>
         <a href="https://www.facebook.com/TousLesJoursUSA/" target="_blank"><i class="fa-brands fa-facebook"
             style="color: #ffffff"></i></a>
