@@ -365,11 +365,9 @@ a {
 
 .menu-page-hero{
   height: 60vh;
-  background-image: url("/images/menu-headers/coffee-header.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
-
 }
 
 .menu-page-heading{
