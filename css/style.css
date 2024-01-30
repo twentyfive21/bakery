@@ -411,6 +411,9 @@ a {
   font-size: 0.8rem;
   font-weight: 600;
 }
+.filtering-container a:hover {
+  border-bottom: 1px solid var(--peru);
+}
 
 /** FILTERING BAR END **/
 
