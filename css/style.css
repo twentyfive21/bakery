@@ -428,6 +428,37 @@ a {
 
 
 
+
+
+
+/**THIRD PAGE HTML DETAILS CSS START!!!**/
+
+
+
+.details-jumbotron {
+  position: relative;
+  background-image: url("https://www.dispatch.com/gcdn/presto/2023/03/03/NCOD/c95d61f1-d68d-4d8b-8ed0-b8de02a65470-06_TOUS_LES_JOURS_CLH001.jpg");
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-top: 50px;
+}
+
+
+.jumbotron-header{
+  color: white;
+}
+
+
+
+
+
+/**THIRD PAGE HTML DETAILS CSS END!!!**/
+
+
+
+
 /** Footer CSS **/
 .footer-bg {
   background-color: var(--tlj-green);
