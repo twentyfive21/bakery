@@ -379,6 +379,40 @@ a {
   line-height: 1;
 }
 
+/** FILTERING BAR START **/
+
+.filtering-container {
+  display: flex;
+  background-color: var(--tlj-gold);
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 60px;
+  height: 128px;
+}
+.filtering-container img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+.filter-smaller img {
+  width: 42px;
+  height: 44px;
+  margin-bottom: 2px;
+}
+.filtering-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filtering-container p {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: var(--tlj-green);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/** FILTERING BAR END **/
 
 
 
