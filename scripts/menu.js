@@ -8,30 +8,22 @@ import data from './data.js';
 
 
 
-
-function getQueryParam(key) {
+    function getQueryParam(key) {
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       return urlParams.get(key);
     }
+  const menuType = getQueryParam('q');
+  if (menuType) {
+    console.log('Menu type:', menuType);
 
-    // Example usage
-    const menuType = getQueryParam('q');
-    if (menuType) {
-      console.log('Menu type:', menuType);
-
-    }
-
-    console.log(data[menuType].headerImage)
-
-// Use data[menuType] instead of data.menuType
+    const menuHeader = document.querySelector('.menu-page-hero');
+    const menuHeaderText = document.querySelector('.menu-page-heading');
+  // Use data[menuType] instead of data.menuType
 // Dot notation expects a constant property name,
 // while square bracket notation allows dynamic keys.
 
-const menuHeader = document.querySelector('.menu-page-hero');
-const menuHeaderText = document.querySelector('.menu-page-heading');
-
-menuHeader.setAttribute( "style", `background-image: url(${data[menuType].headerImage})` );
-menuHeaderText.innerText = data[menuType].items[0].category;
-
+    menuHeader.style.backgroundImage = `url(${data[menuType]?.headerImage})`;
+    menuHeaderText.innerText = data[menuType]?.items[0]?.category;
+  }
 

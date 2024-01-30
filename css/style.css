@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 
-/**Header CSS **/
+/**Header CSS START**/
 
 .header-container-padding {
   padding: 10px 50px;
@@ -123,8 +123,9 @@ a {
   color: var(--antique-white);
 }
 
+/**Header CSS END**/
 
-/** Our story CSS **/
+/** Our story CSS START**/
 
 .story-main-container {
   display: flex;
@@ -171,7 +172,7 @@ a {
 
 /** Our story CSS END **/
 
-/** Bakery Menu items CSS Start Index **/
+/** Bakery Menu items CSS Start **/
 
 .bakery-section-menu {
   background-color: var(--peru);
@@ -327,7 +328,6 @@ a {
    color: var(--tlj-gold);
 }
 
-/* Add this to your existing styles or create a new CSS file */
 
 .modal-content {
   background-color: var(--antique-white);
@@ -357,6 +357,8 @@ a {
   color: var(--tlj-gold);
 }
 
+/** Newsletter CSS END**/
+
 
 
 /**SECOND HTML PAGE MENU CSS START**/
@@ -378,6 +380,8 @@ a {
   font-size: 58px;
   line-height: 1;
 }
+
+/** MENU HTML HERO SECTION END **/
 
 /** FILTERING BAR START **/
 
@@ -471,7 +475,7 @@ a {
 
 
 
-/** Footer CSS **/
+/** Footer CSS END**/
 .footer-bg {
   background-color: var(--tlj-green);
 }
@@ -512,6 +516,8 @@ i {
 footer .col a {
   -webkit-user-drag: none;
 }
+
+/** Footer CSS END**/
 
 /**MEDIA QUERIES START **/
 

@@ -27,7 +27,7 @@
             <a class="nav-link" aria-current="page" href="/menus.html">Breads</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/menus.html">Cakes</a>
+            <a class="nav-link" href="/details.html?q=cakes&f=Cloud Cake 3">Cakes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/menus.html">Beverages</a>
@@ -45,59 +45,84 @@
 
   <!--**NAVBAR END**-->
 
+  
+
 
   
-<div class="container marketing border my-5">
-  <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">NUTRITION</th>
-    </tr>
-  </thead>
-<tbody class="table-group-divider">
-  <tr>
-    <th scope="row">Calories</th>
-    <td>270</td>
-  </tr>
-  <tr>
-    <th scope="row">Total Fat (g)</th>
-    <td>6(g)</td>
-  </tr>
-  <tr>
-    <th scope="row">Saturated Fat (g)</th>
-    <td colspan="2">2.5(g)</td>
-  </tr>
-  <tr>
-    <th scope="row">Trans Fat (g)</th>
-    <td colspan="2">0</td>
-  </tr>
-  <tr>
-    <th scope="row">Total Carbohydrate (g)</th>
-    <td colspan="2">44(g)</td>
-  </tr>
-  <tr>
-    <th scope="row">Total Sugar (g)</th>
-    <td colspan="2">8(g)</td>
-  </tr>
-  <tr>
-    <th scope="row">Protein (g)</th>
-    <td colspan="2">8(g)</td>
-  </tr>
-</tbody>
-
-</table>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
+<div class="container marketing my-5">
+  <div class="row featurette d-flex justify-content-center">
+    
+     <div class="col-md-5 order-md-1 mt-3">
+      <img src="./images/blended/caramel-frappe.png" alt="Image Placeholder" id="detail-image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="700" height="70vh">
+      <table class="table">
+         <thead>
+          <tr class="table-bordered">
+            <th scope="col">INGREDIENTS</th>
+          </tr>
+        </thead>
+      </table>
+       <p id="detail-ingredients">Cloud cream[heavy cream(milk), whipped cream, sugar], White cake sheet(whole egg, wheat flour, sugar, egg white, milk, corn syrup, shortening, margarine, emulsifying agent, corn starch, baking powder, salt, citric acid, xanthan gum), Strawberry, Simple syrup(water, sugar, lemon juice), Green grapes, Red grapes, Blackberry, Blueberry, Raspberry, Glaze, Chocolate sign board(dark)</p>
     </div>
+
+    <div class="col-md-3 order-md-2">
+        <h3 id="detail-menu-header"></h3>
+      <table class="table">
+        <thead>
+          <tr class="table-bordered">
+            <th scope="col">NUTRITION</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr class="bg-primary w-50">
+            <th scope="row" class="w-25 border-1">Calories</th>
+            <td class="border-1 w-75">270</td>
+          </tr>
+          <tr>
+            <th scope="row" class="w-50 border-1">Total Fat (g)</th>
+            <td class="border-1">6(g)</td>
+          </tr>
+          <tr>
+            <th scope="row" class="w-50 border-1">Saturated Fat (g)</th>
+            <td colspan="2" class="border-1">2.5(g)</td>
+          </tr>
+          <tr>
+            <th scope="row" class="w-50 border-1">Trans Fat (g)</th>
+            <td colspan="2" class="border-1">0</td>
+          </tr>
+          <tr>
+            <th scope="row" class="w-50 border-1">Total Carbohydrate (g)</th>
+            <td colspan="2" class="border-1">44(g)</td>
+          </tr>
+          <tr>
+            <th scope="row" class="w-50 border-1">Total Sugar (g)</th>
+            <td colspan="2" class="border-1">8(g)</td>
+          </tr>
+          <tr>
+            <th scope="row" class="w-50 border-1">Protein (g)</th>
+            <td colspan="2" class="border-1">8(g)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>ALLERGENS</strong></p>
+<ul>
+  <li>Egg</li>
+  <li>Milk</li>
+  <li>Soy</li>
+  <li>Tree Nut</li>
+  <li>Wheat</li>
+</ul>
+
+      <p>2,000 Calories a day is used for general nutrition advice, but calorie needs may vary. Additional nutritional information available upon request. Customization of your order may impact the accuracy and/or completeness of the available nutritional information. Allergen and Nutrition Information</p>
+    </div>
+
+   
+  </div>
 </div>
  
 
 
   <!--**TEST**-->
+
   <div class="container-fluid ">
   <div class="text-center rounded-3 details-jumbotron d-flex justify-content-center align-items-center flex-column">
     <h1 class="jumbotron-header display-5">Find a Tous les Jours Near me</h1>
@@ -240,7 +265,7 @@
 
   </div>
   <!--**FOOTER END**-->
-  <script type="module" src="./scripts/script.js"></script>
+  <script type="module" src="./scripts/details.js"></script>
   <script type="module" src="./scripts/data.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

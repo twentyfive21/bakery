@@ -282,7 +282,7 @@ const data = {
     {
       id: 2,
       category: "Cake",
-      name: "Blueberry Yogurt #3",
+      name: "Blueberry Yogurt 3",
       ingredients: "Blueberry cream[heavy cream(milk), blueberry puree, whipped cream, sugar, blueberry compound], White cake sheet(whole egg, wheat flour, sugar, egg white, milk, corn syrup, shortening, margarine, emulsifying agent, corn starch, baking powder, salt, citric acid, xanthan gum), Blueberry, Cloud cream[heavy cream(milk), whipped cream, sugar], Simple syrup(water, sugar, lemon juice), Blueberry glaze(Blueberry compound, water, sugar, lemon juice), Glaze",
       image: "../images/cake/blueberry-yogurt3.png",
       nutrition: {
@@ -298,7 +298,7 @@ const data = {
     {
       id: 3,
       category: "Cake",
-      name: "Blueberry Yogurt #2",
+      name: "Blueberry Yogurt 2",
       ingredients: "Blueberry cream[heavy cream(milk), blueberry puree, whipped cream, sugar, blueberry compound], White cake sheet(whole egg, wheat flour, sugar, egg white, milk, corn syrup, shortening, margarine, emulsifying agent, corn starch, baking powder, salt, citric acid, xanthan gum), Blueberry, Cloud cream[heavy cream(milk), whipped cream, sugar], Simple syrup(water, sugar, lemon juice), Blueberry glaze(Blueberry compound, water, sugar, lemon juice), Glaze",
       image: "../images/cake/blueberry-yogurt2.png",
       nutrition: {
@@ -346,7 +346,7 @@ const data = {
     {
       id: 6,
       category: "Cake",
-      name: "Cloud Cake #3",
+      name: "Cloud Cake 3",
       ingredients: "Cloud cream[heavy cream(milk), whipped cream, sugar], White cake sheet(whole egg, wheat flour, sugar, egg white, milk, corn syrup, shortening, margarine, emulsifying agent, corn starch, baking powder, salt, citric acid, xanthan gum), Strawberry, Simple syrup(water, sugar, lemon juice), Green grapes, Red grapes, Blackberry, Blueberry, Raspberry, Glaze, Chocolate sign board(dark)",
       image: "../images/cake/cloud-cake3.png",
       nutrition: {
@@ -362,7 +362,7 @@ const data = {
     {
       id: 7,
       category: "Cake",
-      name: "Cloud Cake #2",
+      name: "Cloud Cake 2",
       ingredients: "Cloud cream[heavy cream(milk), whipped cream, sugar], White cake sheet(whole egg, wheat flour, sugar, egg white, milk, corn syrup, shortening, margarine, emulsifying agent, corn starch, baking powder, salt, citric acid, xanthan gum), Strawberry, Red grapes, Simple syrup(water, sugar, lemon juice), Blackberry, Blueberry, Raspberry, Glaze",
       image: "../images/cake/cloud-cake2.png",
       nutrition: {
@@ -442,7 +442,7 @@ const data = {
     {
       id: 12,
       category: "Cake",
-      name: "Mango Cloud #3",
+      name: "Mango Cloud 3",
       ingredients: "Mango cream[heavy cream(milk), mango puree, whipped cream, sugar, mango compound], White cake sheet(whole egg, wheat flour, sugar, egg white, milk, corn syrup, shortening, margarine, emulsifying agent, corn starch, baking powder, salt, citric acid, xanthan gum), Mango, Blueberry, Cloud cream[heavy cream(milk), whipped cream, sugar], Simple syrup(water, sugar, lemon juice), Mango glaze(Mango compound, water, sugar, lemon juice), Glaze",
       image: "../images/cake/mango-cloud3.webp",
       nutrition: {
@@ -458,7 +458,7 @@ const data = {
     {
       id: 13,
       category: "Cake",
-      name: "Mango Cloud #2",
+      name: "Mango Cloud 2",
       ingredients: "Mango cream[heavy cream(milk), mango puree, whipped cream, sugar, mango compound], White cake sheet(whole egg, wheat flour, sugar, egg white, milk, corn syrup, shortening, margarine, emulsifying agent, corn starch, baking powder, salt, citric acid, xanthan gum), Mango, Blueberry, Cloud cream[heavy cream(milk), whipped cream, sugar], Simple syrup(water, sugar, lemon juice), Glaze",
       image: "../images/cake/mango-cloud2.webp",
       nutrition: {
