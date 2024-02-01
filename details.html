@@ -52,67 +52,90 @@
 <div class="container marketing my-5">
   <div class="row featurette d-flex justify-content-center">
     
-     <div class="col-md-5 order-md-1 mt-3">
-      <img src="./images/blended/caramel-frappe.png" alt="Image Placeholder" id="detail-image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="700" height="70vh">
-      <table class="table">
-         <thead>
-          <tr class="table-bordered">
-            <th scope="col">INGREDIENTS</th>
-          </tr>
-        </thead>
-      </table>
-       <p id="detail-ingredients">Cloud cream[heavy cream(milk), whipped cream, sugar], White cake sheet(whole egg, wheat flour, sugar, egg white, milk, corn syrup, shortening, margarine, emulsifying agent, corn starch, baking powder, salt, citric acid, xanthan gum), Strawberry, Simple syrup(water, sugar, lemon juice), Green grapes, Red grapes, Blackberry, Blueberry, Raspberry, Glaze, Chocolate sign board(dark)</p>
-    </div>
+   <div class="col-md-5 order-md-1">
+  <h1 class="d-md-none d-block pb-3 custom-top-level-detail-header">Iced cafe Latte</h1>
+  <img src="./images/blended/caramel-frappe.png" alt="Image Placeholder" id="detail-image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="800" height="80vh">
+  <table class="table">
+    <thead>
+      <tr class="table-bordered">
+        <th scope="col" class="custom-border-color bold-tlj-text-detail">INGREDIENTS</th>
+      </tr>
+    </thead>
+  </table>
+  <p id="detail-ingredients" class="custom-lower-level-text-detail">Cloud cream[heavy cream(milk), whipped cream, sugar], White cake sheet(whole egg, wheat flour, sugar, egg white, milk, corn syrup, shortening, margarine, emulsifying agent, corn starch, baking powder, salt, citric acid, xanthan gum), Strawberry, Simple syrup(water, sugar, lemon juice), Green grapes, Red grapes, Blackberry, Blueberry, Raspberry, Glaze, Chocolate sign board(dark)</p>
+</div>
+
 
     <div class="col-md-3 order-md-2">
-        <h3 id="detail-menu-header"></h3>
+        <h3 id="detail-menu-header" class="d-none d-md-block custom-top-level-detail-header"></h3>
       <table class="table">
         <thead>
-          <tr class="table-bordered">
-            <th scope="col">NUTRITION</th>
+          <tr class="table-bordered custom-border-color">
+            <th scope="col" class="bold-tlj-text-detail">NUTRITION</th>
           </tr>
         </thead>
-        <tbody class="table-group-divider">
-          <tr class="bg-primary w-50">
-            <th scope="row" class="w-25 border-1">Calories</th>
-            <td class="border-1 w-75">270</td>
+        <tbody class="table-group-divider custom-border-color">
+          <tr class="bg-primary w-75">
+            <th scope="row" class="w-50 border-1">Calories</th>
+            <td id="nutrition-values" class="border-1 w-75">270</td>
           </tr>
           <tr>
             <th scope="row" class="w-50 border-1">Total Fat (g)</th>
-            <td class="border-1">6(g)</td>
+            <td id="nutrition-values" class="border-1">6(g)</td>
           </tr>
           <tr>
             <th scope="row" class="w-50 border-1">Saturated Fat (g)</th>
-            <td colspan="2" class="border-1">2.5(g)</td>
+            <td id="nutrition-values" colspan="2" class="border-1">2.5(g)</td>
           </tr>
           <tr>
             <th scope="row" class="w-50 border-1">Trans Fat (g)</th>
-            <td colspan="2" class="border-1">0</td>
+            <td id="nutrition-values" colspan="2" class="border-1">0</td>
           </tr>
           <tr>
             <th scope="row" class="w-50 border-1">Total Carbohydrate (g)</th>
-            <td colspan="2" class="border-1">44(g)</td>
+            <td id="nutrition-values" colspan="2" class="border-1">44(g)</td>
           </tr>
           <tr>
             <th scope="row" class="w-50 border-1">Total Sugar (g)</th>
-            <td colspan="2" class="border-1">8(g)</td>
+            <td id="nutrition-values" colspan="2" class="border-1">8(g)</td>
           </tr>
           <tr>
             <th scope="row" class="w-50 border-1">Protein (g)</th>
-            <td colspan="2" class="border-1">8(g)</td>
+            <td id="nutrition-values" colspan="2" class="border-1">8(g)</td>
           </tr>
         </tbody>
       </table>
-      <p><strong>ALLERGENS</strong></p>
-<ul>
-  <li>Egg</li>
-  <li>Milk</li>
-  <li>Soy</li>
-  <li>Tree Nut</li>
-  <li>Wheat</li>
-</ul>
+ <table class="table">
+         <thead>
+          <tr class="table-bordered">
+            <th scope="col" class="bold-tlj-text-detail custom-border-color">ALLERGENS</th>
+          </tr>
+        </thead>
+      </table>
+    <div class="d-flex justify-content-evenly align-items-center">
+  <div class="text-center">
+    <img src="./images/icons/egg.svg" alt="eggs" class="p-2 allergens-image-detail">
+    <p>Egg</p>
+  </div>
+  <div class="text-center">
+    <img src="./images/icons/milk.svg" alt="milk" class="p-2 allergens-image-detail">
+    <p>Milk</p>
+  </div>
+  <div class="text-center">
+    <img src="./images/icons/soy.svg" alt="soy" class="p-2 allergens-image-detail">
+    <p>Soy</p>
+  </div>
+  <div class="text-center">
+    <img src="./images/icons/tree.svg" alt="tree nut" class="p-2 allergens-image-detail">
+    <p>Tree</p>
+  </div>
+  <div class="text-center">
+    <img src="./images/icons/wheat.svg" alt="wheat" class="p-2 allergens-image-detail">
+    <p>Wheat</p>
+  </div>
+</div>
 
-      <p>2,000 Calories a day is used for general nutrition advice, but calorie needs may vary. Additional nutritional information available upon request. Customization of your order may impact the accuracy and/or completeness of the available nutritional information. Allergen and Nutrition Information</p>
+      <p class="custom-lower-level-text-detail">2,000 Calories a day is used for general nutrition advice, but calorie needs may vary. Additional nutritional information available upon request. Customization of your order may impact the accuracy and/or completeness of the available nutritional information. Allergen and Nutrition Information</p>
     </div>
 
    
