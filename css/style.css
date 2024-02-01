@@ -466,6 +466,50 @@ a {
   color: white;
 }
 
+.custom-border-color {
+  border-color: rgba(35, 53, 41, 0.5);
+}
+
+thead tr th.bold-tlj-text-detail {
+    color: var(--tlj-green) !important;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.custom-top-level-detail-header{
+  color: var(--tlj-green);
+  letter-spacing: .05em;
+  -webkit-text-stroke-color: var(--tlj-green);
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Playfair";
+}
+
+.bold-tlj-text-detail{
+  color: var(--tlj-orange);
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.allergens-image-detail{
+  width: 60px;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.custom-lower-level-text-detail{
+  color: var(--tlj-green);
+  font-size: .875rem;
+  line-height: 2;
+}
+
+
+
+.allergens{
+  display: flex;
+}
+
 
 
 
