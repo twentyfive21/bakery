@@ -27,3 +27,15 @@ import data from './data.js';
     menuHeaderText.innerText = data[menuType]?.items[0]?.category;
   }
 
+  // function for selected menu items 
+  const selectedMenuItems = document.querySelector('.selected-menu-box');
+  
+  selectedMenuItems.innerHTML = data[menuType]?.items?.map((item)=>{
+    return `<div class="col category-image-card">
+              <div class="text-center">
+              <img src="${item.image}" class="rounded" alt="${item.name}" />
+              <p>${item.name}</p>
+              </div>
+            </div>`
+  }).join('')
+
