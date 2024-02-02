@@ -500,7 +500,7 @@ thead tr th.bold-tlj-text-detail {
   color: var(--tlj-green);
   letter-spacing: .05em;
   -webkit-text-stroke-color: var(--tlj-green);
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 600;
   font-family: "Playfair";
 }

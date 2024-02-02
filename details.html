@@ -11,49 +11,58 @@
 </head>
 
 <body>
-  <!--**NAVBAR**-->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid header-container-padding">
-      <a href="/index.html">
-        <img src="./images/main-page/header-dark.png" alt="logo" class="header-logo" />
-      </a>
-      <button class="navbar-toggler header-hamburger" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/menus.html">Breads</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/details.html?q=cakes&f=Cloud Cake 3">Cakes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/menus.html">Beverages</a>
-          </li>
-        </ul>
-        <div class="navbar-text contact-us-green">
-          <span> | </span>
-          <a href="https://github.com/twentyfive21/bakery" target="_blank">
-            contact us
-          </a>
+ <!--*NAV BAR START*-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid header-container-padding">
+        <a href="/index.html">
+          <img src="./images/main-page/header-dark.png" alt="logo"
+            class="header-logo" />
+        </a>
+        <button class="navbar-toggler header-hamburger" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText" aria-controls="navbarText"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul justify-content-around">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/menus.html?q=bread">Breads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/menus.html?q=cakes">Cakes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/menus.html?q=coffee">Beverages</a>
+            </li>
+          </ul>
+          <div class="navbar-text contact-us-green">
+            <span id="navbar-lg-contact-btn"> | </span>
+            <a href="https://github.com/twentyfive21/bakery" target="_blank"
+              id="navbar-lg-contact-btn">
+              contact us
+            </a>
+            <a href="https://github.com/twentyfive21/bakery" target="_blank"
+              class="navbar-contact-btn">
+              contact us
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!--**NAVBAR END**-->
+    <!--*NAV BAR END*-->
 
   
 
 
   
 <div class="container marketing my-5">
-  <div class="row featurette d-flex justify-content-center">
+ <div class="row featurette d-flex justify-content-center">
     
-   <div class="col-md-5 order-md-1">
-  <h1 class="d-md-none d-block pb-3 custom-top-level-detail-header">Iced cafe Latte</h1>
+   <div class="col-md-7 order-md-1">
+  <h1 class="d-md-none d-block pb-3 custom-top-level-detail-header" id="moblie-detail-header"></h1>
   <img src="./images/blended/caramel-frappe.png" alt="Image Placeholder" id="detail-image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="800" height="80vh">
   <table class="table">
     <thead>
@@ -66,8 +75,9 @@
 </div>
 
 
-    <div class="col-md-3 order-md-2">
-        <h3 id="detail-menu-header" class="d-none d-md-block custom-top-level-detail-header"></h3>
+    <div class="col-md-4 order-md-2">
+       <h3 id="detail-menu-header" class="d-none d-md-block custom-top-level-detail-header"></h3>
+
       <table class="table">
         <thead>
           <tr class="table-bordered custom-border-color">
@@ -112,24 +122,24 @@
           </tr>
         </thead>
       </table>
-    <div class="d-flex justify-content-evenly align-items-center">
-  <div class="text-center">
+    <div class="d-flex justify-content-evenly align-items-center col-md-12 ms-lg-0 ms-md-3 ms-sm-0">
+  <div class="text-center col-lg-2 col-md-3 col-sm-1">
     <img src="./images/icons/egg.svg" alt="eggs" class="p-2 allergens-image-detail">
     <p>Egg</p>
   </div>
-  <div class="text-center">
+  <div class="text-center col-lg-2 col-md-3 col-sm-1">
     <img src="./images/icons/milk.svg" alt="milk" class="p-2 allergens-image-detail">
     <p>Milk</p>
   </div>
-  <div class="text-center">
+  <div class="text-center col-lg-2 col-md-3 col-sm-1">
     <img src="./images/icons/soy.svg" alt="soy" class="p-2 allergens-image-detail">
     <p>Soy</p>
   </div>
-  <div class="text-center">
+  <div class="text-center col-lg-2 col-md-3 col-sm-1">
     <img src="./images/icons/tree.svg" alt="tree nut" class="p-2 allergens-image-detail">
     <p>Tree</p>
   </div>
-  <div class="text-center">
+  <div class="text-center col-lg-2 col-md-3 col-sm-1">
     <img src="./images/icons/wheat.svg" alt="wheat" class="p-2 allergens-image-detail">
     <p>Wheat</p>
   </div>
@@ -146,17 +156,52 @@
 
   <!--**TEST**-->
 
-  <div class="container-fluid ">
+  <div class="container-fluid">
   <div class="text-center rounded-3 details-jumbotron d-flex justify-content-center align-items-center flex-column">
-    <h1 class="jumbotron-header display-5">Find a Tous les Jours Near me</h1>
+    <h1 class="jumbotron-header display-5">Check Out Our Reviews</h1>
     <!-- <p class="lead">
      
     </p> -->
-     <button type="button" class="btn mt-3 newsletter-button">
-        Find
-      </button>
+  <button type="button" class="btn newsletter-button" data-bs-toggle="modal" data-bs-target="#reviewsModal">
+  Read Reviews
+</button>
+      
   </div>
 </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reviewsModalTitle">Guest Reviews</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-4">
+          <h6 class="fw-bold">Pastry Delight! <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></h6>
+          <p class="italic">The pastries at Tous les Jours are absolutely delightful. The layers are flaky, and the fillings are rich and flavorful. Highly recommended!</p>
+        </div>
+        <div class="mb-4">
+          <h6 class="fw-bold">Sweet Tooth Heaven <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></h6>
+          <p class="italic">If you have a sweet tooth, this is the place to be. The desserts are heavenly, and the variety is impressive. I can't get enough!</p>
+        </div>
+        <div class="mb-4">
+          <h6 class="fw-bold">Perfect Cup of Coffee <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></h6>
+          <p class="italic">The coffee here is perfection. Whether you like it black or with all the fancy additions, Tous les Jours knows how to brew the perfect cup.</p>
+        </div>
+        <!-- Add more reviews as needed -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Write Your Review</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
   <!--*FORM NEWSLETTER*-->
 
@@ -219,75 +264,82 @@
 
   
 
-  <!--**FOOTER**-->
+<!--*FOOTER SECTION START*-->
 
-  <div class="container-fluid footer-bg custom-footer">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top">
-      <div class="col mb-3">
-        <a href="/index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <img src="/images/menu-headers/footer-logo.svg" alt="tous les jours logo" />
-        </a>
-        <a href="https://www.facebook.com/TousLesJoursUSA/" target="_blank"><i class="fa-brands fa-facebook"
-            style="color: #ffffff"></i></a>
-        <a href="https://www.instagram.com/touslesjoursusa/?hl=en" target="_blank"><i
-            class="fa-brands fa-square-instagram" style="color: #ffffff"></i></a>
-        <a href="https://www.linkedin.com/company/cj-foodville-usa-inc/" target="_blank"><i
-            class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
-      </div>
+    <div class="container-fluid footer-bg custom-footer">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top">
+        <div class="col mb-3">
+          <a href="/index.html"
+            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="/images/menu-headers/footer-logo.svg"
+              alt="tous les jours logo" class="footer-logo-img" />
+          </a>
+          <a href="https://www.facebook.com/TousLesJoursUSA/" target="_blank"><i
+              class="fa-brands fa-facebook"
+              style="color: #ffffff"></i></a>
+          <a href="https://www.instagram.com/touslesjoursusa/?hl=en"
+            target="_blank"><i
+              class="fa-brands fa-square-instagram" style="color: #ffffff"></i></a>
+          <a href="https://www.linkedin.com/company/cj-foodville-usa-inc/"
+            target="_blank"><i
+              class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
+        </div>
 
-      <div class="col mb-3"></div>
+        <div class="col mb-3"></div>
 
-      <div class="col mb-3">
-        <h5 class="footer-header-gold">Bakery</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="/menus.html" class="p-0">Bread</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="/menus.html" class="p-0">Cakes</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="/menus.html" class="p-0">Pastry</a>
-          </li>
-        </ul>
-      </div>
+        <div class="col mb-3">
+          <h5 class="footer-header-gold">Bakery</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="/menus.html?q=bread" class="p-0">Bread</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/menus.html?q=cakes" class="p-0">Cakes</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/menus.html?q=pastry" class="p-0">Pastry</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="col mb-3">
-        <h5 class="footer-header-gold">Beverages</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="/menus.html" class="p-0">Coffee</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="/menus.html" class="p-0">Tea & More</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="/menus.html" class="p-0">Blended</a>
-          </li>
-        </ul>
-      </div>
+        <div class="col mb-3">
+          <h5 class="footer-header-gold">Beverages</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="/menus.html?q=coffee" class="p-0">Coffee</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/menus.html?q=tea" class="p-0">Tea & More</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/menus.html?q=blended" class="p-0">Blended</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="col mb-3">
-        <h5 class="footer-header-gold">Company</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="/index.html" class="p-0">Home</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="https://github.com/twentyfive21/bakery" target="_blank" class="p-0">Contact Us</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="p-0 non-hover">&copy; 2024 TOUS les JOURS International Corp. All Rights
-              Reserved.</a>
-          </li>
-        </ul>
-      </div>
-      <div class="hr-line-footer"></div>
-    </footer>
+        <div class="col mb-3">
+          <h5 class="footer-header-gold">Company</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="/index.html" class="p-0">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="https://github.com/twentyfive21/bakery" target="_blank"
+                class="p-0">Contact Us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="p-0 non-hover">&copy; 2024 TOUS les JOURS
+                International Corp. All Rights
+                Reserved.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hr-line-footer"></div>
+      </footer>
+    </div>
 
-
-  </div>
-  <!--**FOOTER END**-->
+    <!--*FOOTER SECTION END*-->
   <script type="module" src="./scripts/details.js"></script>
   <script type="module" src="./scripts/data.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

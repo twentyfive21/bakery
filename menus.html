@@ -13,32 +13,24 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+   <!--*NAV BAR START*-->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid header-container-padding">
         <a href="/index.html">
-          <img
-            src="./images/main-page/header-dark.png"
-            alt="logo"
-            class="header-logo"
-          />
+          <img src="./images/main-page/header-dark.png" alt="logo"
+            class="header-logo" />
         </a>
-        <button
-          class="navbar-toggler header-hamburger"
-          type="button"
+        <button class="navbar-toggler header-hamburger" type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          data-bs-target="#navbarText" aria-controls="navbarText"
+          aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul justify-content-around">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/menus.html?q=bread"
-                >Breads</a
-              >
+              <a class="nav-link" aria-current="page" href="/menus.html?q=bread">Breads</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/menus.html?q=cakes">Cakes</a>
@@ -48,14 +40,22 @@
             </li>
           </ul>
           <div class="navbar-text contact-us-green">
-            <span> | </span>
-            <a href="https://github.com/twentyfive21/bakery" target="_blank">
+            <span id="navbar-lg-contact-btn"> | </span>
+            <a href="https://github.com/twentyfive21/bakery" target="_blank"
+              id="navbar-lg-contact-btn">
+              contact us
+            </a>
+            <a href="https://github.com/twentyfive21/bakery" target="_blank"
+              class="navbar-contact-btn">
               contact us
             </a>
           </div>
         </div>
       </div>
     </nav>
+
+    <!--*NAV BAR END*-->
+
 
     <!--**MENU HERO SECTION**-->
 
@@ -227,34 +227,26 @@
       </div>
     </div>
 
-    <!--**FOOTER SECTION**-->
+   <!--*FOOTER SECTION START*-->
+
     <div class="container-fluid footer-bg custom-footer">
       <footer
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top"
-      >
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top">
         <div class="col mb-3">
-          <a
-            href="/index.html"
-            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-          >
-            <img
-              src="/images/menu-headers/footer-logo.svg"
-              alt="tous les jours logo"
-            />
+          <a href="/index.html"
+            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="/images/menu-headers/footer-logo.svg"
+              alt="tous les jours logo" class="footer-logo-img" />
           </a>
-          <a href="https://www.facebook.com/TousLesJoursUSA/" target="_blank"
-            ><i class="fa-brands fa-facebook" style="color: #ffffff"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/touslesjoursusa/?hl=en"
-            target="_blank"
-            ><i class="fa-brands fa-square-instagram" style="color: #ffffff"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/company/cj-foodville-usa-inc/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
-          ></a>
+          <a href="https://www.facebook.com/TousLesJoursUSA/" target="_blank"><i
+              class="fa-brands fa-facebook"
+              style="color: #ffffff"></i></a>
+          <a href="https://www.instagram.com/touslesjoursusa/?hl=en"
+            target="_blank"><i
+              class="fa-brands fa-square-instagram" style="color: #ffffff"></i></a>
+          <a href="https://www.linkedin.com/company/cj-foodville-usa-inc/"
+            target="_blank"><i
+              class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
         </div>
 
         <div class="col mb-3"></div>
@@ -263,13 +255,13 @@
           <h5 class="footer-header-gold">Bakery</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Bread</a>
+              <a href="/menus.html?q=bread" class="p-0">Bread</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Cakes</a>
+              <a href="/menus.html?q=cakes" class="p-0">Cakes</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Pastry</a>
+              <a href="/menus.html?q=pastry" class="p-0">Pastry</a>
             </li>
           </ul>
         </div>
@@ -278,13 +270,13 @@
           <h5 class="footer-header-gold">Beverages</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Coffee</a>
+              <a href="/menus.html?q=coffee" class="p-0">Coffee</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Tea & More</a>
+              <a href="/menus.html?q=tea" class="p-0">Tea & More</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Blended</a>
+              <a href="/menus.html?q=blended" class="p-0">Blended</a>
             </li>
           </ul>
         </div>
@@ -296,24 +288,21 @@
               <a href="/index.html" class="p-0">Home</a>
             </li>
             <li class="nav-item mb-2">
-              <a
-                href="https://github.com/twentyfive21/bakery"
-                target="_blank"
-                class="p-0"
-                >Contact Us</a
-              >
+              <a href="https://github.com/twentyfive21/bakery" target="_blank"
+                class="p-0">Contact Us</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="p-0 non-hover"
-                >&copy; 2024 TOUS les JOURS International Corp. All Rights
-                Reserved.</a
-              >
+              <a href="#" class="p-0 non-hover">&copy; 2024 TOUS les JOURS
+                International Corp. All Rights
+                Reserved.</a>
             </li>
           </ul>
         </div>
         <div class="hr-line-footer"></div>
       </footer>
     </div>
+
+    <!--*FOOTER SECTION END*-->
     <script type="module" src="./scripts/script.js"></script>
     <script type="module" src="./scripts/data.js"></script>
     <script type="module" src="./scripts/menu.js"></script>
