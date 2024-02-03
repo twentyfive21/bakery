@@ -28,3 +28,17 @@ const foodItemNutrition = Object.values(findFoodItem.nutrition);
 nutritionValues.forEach((node, index) => {
   node.textContent = foodItemNutrition[index];
 });
+
+// Enable/Disable Subscribe button based on form validity
+   document.getElementById('newsletterForm').addEventListener('input', function () {
+        const form = this;
+        const subscribeBtn = document.getElementById('subscribeBtn');
+        subscribeBtn.disabled = !form.checkValidity();
+    });
+
+    document.getElementById('subscribeBtn').addEventListener('click', function () {
+        const form = document.getElementById('newsletterForm');
+        if (form.checkValidity()) {
+            form.reset(); // Clear form values if the form is valid
+        }
+    });
