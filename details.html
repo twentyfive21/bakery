@@ -11,49 +11,53 @@
 </head>
 
 <body>
- <!--*NAV BAR START*-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid header-container-padding">
-        <a href="/index.html">
-          <img src="./images/main-page/header-dark.png" alt="logo"
-            class="header-logo" />
+     <!--*NAV BAR START*-->
+   <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid header-container-padding">
+    
+    <!-- Logo on the far left -->
+    <a href="/index.html" class="navbar-brand">
+      <img src="./images/main-page/header-dark.png" alt="logo" class="header-logo" />
+    </a>
+
+    <!-- Hamburger button for mobile -->
+    <button class="navbar-toggler header-hamburger" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      
+      <!-- URLs in the middle -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-nav-ul justify-content-around">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/menus.html?q=bread">Breads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus.html?q=cakes">Cakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus.html?q=coffee">Beverages</a>
+        </li>
+      </ul>
+
+      <!-- Contact us on the far right -->
+      <div class="navbar-text contact-us-green">
+        <span id="navbar-lg-contact-btn"> | </span>
+        <a href="https://github.com/twentyfive21/bakery" target="_blank" id="navbar-lg-contact-btn">
+          contact us
         </a>
-        <button class="navbar-toggler header-hamburger" type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText" aria-controls="navbarText"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul
-            class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul justify-content-around">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/menus.html?q=bread">Breads</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/menus.html?q=cakes">Cakes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/menus.html?q=coffee">Beverages</a>
-            </li>
-          </ul>
-          <div class="navbar-text contact-us-green">
-            <span id="navbar-lg-contact-btn"> | </span>
-            <a href="https://github.com/twentyfive21/bakery" target="_blank"
-              id="navbar-lg-contact-btn">
-              contact us
-            </a>
-            <a href="https://github.com/twentyfive21/bakery" target="_blank"
-              class="navbar-contact-btn">
-              contact us
-            </a>
-          </div>
-        </div>
+        <a href="https://github.com/twentyfive21/bakery" target="_blank" class="navbar-contact-btn">
+          contact us
+        </a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
+
 
     <!--*NAV BAR END*-->
-
   
 
 
@@ -63,7 +67,8 @@
     
    <div class="col-md-7 order-md-1">
   <h1 class="d-md-none d-block pb-3 custom-top-level-detail-header" id="moblie-detail-header"></h1>
-  <img src="./images/blended/caramel-frappe.png" alt="Image Placeholder" id="detail-image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="800" height="80vh">
+  <img src="./images/blended/caramel-frappe.png" alt="Image Placeholder" id="detail-image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3 detail-menu-item-resize" width="800" height="80vh">
+
   <table class="table">
     <thead>
       <tr class="table-bordered">
@@ -158,7 +163,7 @@
 
   <div class="container-fluid">
   <div class="text-center rounded-3 details-jumbotron d-flex justify-content-center align-items-center flex-column">
-    <h1 class="jumbotron-header display-5">Check Out Our Reviews</h1>
+    <h1 class="jumbotron-header display-5 fw-bold">Check Out Our Reviews</h1>
     <!-- <p class="lead">
      
     </p> -->
@@ -175,27 +180,62 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="reviewsModalTitle">Guest Reviews</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="mb-4">
-          <h6 class="fw-bold">Pastry Delight! <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></h6>
-          <p class="italic">The pastries at Tous les Jours are absolutely delightful. The layers are flaky, and the fillings are rich and flavorful. Highly recommended!</p>
+<div class="container overflow-hidden">
+              <div class="row gy-4 gy-md-0 gx-xxl-5 flex-column align-items-center vstack gap-3">
+       <div class="col-12">
+        <div class="card border-0 border-bottom border-primary shadow-sm">
+          <div class="card-body p-4 p-xxl-5">
+            <figure>
+              <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/women/2.jpg" alt="">
+              <figcaption>
+                <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                <blockquote class="bsb-blockquote-icon mb-4 custom-lower-level-text-detail">Went for the first time yesterday and it was incredible. Picked up way too much, went back to the parking garage and started eating. Best croissant I've ever had by a significant margin. Went for coffee while still munching on all our purchases. Immediately drove back and bought more. Everything we bought was fantastic and I'm eager to try more next time we're in the area.</blockquote>
+                <h4 class="mb-2 custom-top-level-detail-header">Luna Rex</h4>
+                <h5 class="fs-6 text-secondary mb-0">Statesville, NC</h5>
+              </figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="mb-4">
-          <h6 class="fw-bold">Sweet Tooth Heaven <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></h6>
-          <p class="italic">If you have a sweet tooth, this is the place to be. The desserts are heavenly, and the variety is impressive. I can't get enough!</p>
-        </div>
-        <div class="mb-4">
-          <h6 class="fw-bold">Perfect Cup of Coffee <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></h6>
-          <p class="italic">The coffee here is perfection. Whether you like it black or with all the fancy additions, Tous les Jours knows how to brew the perfect cup.</p>
-        </div>
-        <!-- Add more reviews as needed -->
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Write Your Review</button>
+      <div class="col-12">
+        <div class="card border-0 border-bottom border-primary shadow-sm">
+          <div class="card-body p-4 p-xxl-5">
+            <figure>
+              <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+              <figcaption>
+                <div class="bsb-ratings text-warning mb-3" data-bsb-star="4" data-bsb-star-off="1"></div>
+                <blockquote class="bsb-blockquote-icon mb-4 custom-lower-level-text-detail">High quality pastries and desserts. They serve asian and french inspired pastries and lots of variety of cakes, breads, and beverages as well. It is a bit small but there is a separate floor with some tables. It has got an aesthetic, cozy cafe vibe. The strawberry cake we tried was phenomenal and their sweetness level of their desserts is just enough. </blockquote>
+                <h4 class="mb-2 custom-top-level-detail-header">Kiko Shimer</h4>
+                <h5 class="fs-6 text-secondary mb-0">Charlotte, NC</h5>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+     <div class="col-12">
+        <div class="card border-0 border-bottom border-primary shadow-sm">
+          <div class="card-body p-4 p-xxl-5">
+            <figure>
+              <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
+              <figcaption>
+                <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                <blockquote class="bsb-blockquote-icon mb-4 custom-lower-level-text-detail">Absolutely delicious! This bakery may be a chain; however, their quality is superb. They have daily made-fresh pastries ranging from plain croissants to red bean stuffed doughnuts, honeydew melon bread, kimchi croquettes, ready-made cakes, and so much more! </blockquote>
+                <h4 class="mb-2 custom-top-level-detail-header">Louis Litt</h4>
+                <h5 class="fs-6 text-secondary mb-0 ">Queens, NY</h5>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn newsletter-button" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -203,41 +243,49 @@
 
 
 
+
+
+
   <!--*FORM NEWSLETTER*-->
 
-  <div class="card text-center border-0 py-5">
+<div class="card text-center border-0 py-5">
     <div class="card-body">
-      <h2 class="card-title fw-bold fs-1 newsletter-header">Join Our Newsletter</h2>
-      <p class="card-text py-3 fs-5 newsletter-text">Stay up to date on the latest news and openings, menu items and
-        more.</p>
-      <div class="container vstack gap-3 align-items-center">
-        <div class="input-group flex-nowrap w-75">
-          <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="First Name"
-            aria-label="Username" aria-describedby="addon-wrapping">
-        </div>
-        <div class="input-group flex-nowrap w-75">
-          <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="Last Name"
-            aria-label="Username" aria-describedby="addon-wrapping">
-        </div>
-        <div class="input-group flex-nowrap w-75">
-          <input type="email" class="form-control border-dark-subtle rounded-3" placeholder="Email"
-            aria-label="Username" aria-describedby="addon-wrapping">
-        </div>
-      </div>
+        <h2 class="card-title fw-bold fs-1 newsletter-header">Join Our Newsletter</h2>
+        <p class="card-text py-3 fs-5 newsletter-text">Stay up to date on the latest news and openings, menu items and
+            more.</p>
+        <form id="newsletterForm" class="needs-validation" novalidate>
+            <div class="container vstack gap-3 align-items-center">
+                <div class="input-group flex-nowrap w-75">
+                    <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="First Name"
+                        aria-label="First Name" aria-describedby="addon-wrapping" required>
+                    <div class="invalid-feedback">Please enter your first name.</div>
+                </div>
+                <div class="input-group flex-nowrap w-75">
+                    <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="Last Name"
+                        aria-label="Last Name" aria-describedby="addon-wrapping" required>
+                    <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+                <div class="input-group flex-nowrap w-75">
+                    <input type="email" class="form-control border-dark-subtle rounded-3" placeholder="Email"
+                        aria-label="Email" aria-describedby="addon-wrapping" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                  <div class="form-check w-auto mt-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required>
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                    I have read and agree to your Terms of Use and Privacy Policy
+                </label>
+                <div class="invalid-feedback">You must agree to the terms and privacy policy.</div>
+            </div>
+            </div>
 
 
-    </div>
-    <div class="container d-flex align-items-center justify-content-center flex-column">
-      <div class="form-check w-auto">
-        <input class="form-check-inpu" type="checkbox" value="" id="flexCheckIndeterminate">
-        <label class="form-check-label" for="flexCheckIndeterminate">
-          I have read and agree to your Terms of Use and Privacy Policy
-        </label>
-      </div>
-      <!-- Button trigger modal -->
-      <button type="button" class="btn mt-3 newsletter-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Subscribe
-      </button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mt-3 newsletter-button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop" id="subscribeBtn" disabled>
+                Subscribe
+            </button>
+        </form>
 
       <!-- Modal -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"

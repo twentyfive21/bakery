@@ -15,45 +15,50 @@
 
   <body>
     <!--*NAV BAR START*-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid header-container-padding">
-        <a href="/index.html">
-          <img src="./images/main-page/header-dark.png" alt="logo"
-            class="header-logo" />
+   <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid header-container-padding">
+    
+    <!-- Logo on the far left -->
+    <a href="/index.html" class="navbar-brand">
+      <img src="./images/main-page/header-dark.png" alt="logo" class="header-logo" />
+    </a>
+
+    <!-- Hamburger button for mobile -->
+    <button class="navbar-toggler header-hamburger" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      
+      <!-- URLs in the middle -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-nav-ul justify-content-around">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/menus.html?q=bread">Breads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus.html?q=cakes">Cakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus.html?q=coffee">Beverages</a>
+        </li>
+      </ul>
+
+      <!-- Contact us on the far right -->
+      <div class="navbar-text contact-us-green">
+        <span id="navbar-lg-contact-btn"> | </span>
+        <a href="https://github.com/twentyfive21/bakery" target="_blank" id="navbar-lg-contact-btn">
+          contact us
         </a>
-        <button class="navbar-toggler header-hamburger" type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText" aria-controls="navbarText"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul
-            class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul justify-content-around">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/menus.html?q=bread">Breads</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/menus.html?q=cakes">Cakes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/menus.html?q=coffee">Beverages</a>
-            </li>
-          </ul>
-          <div class="navbar-text contact-us-green">
-            <span id="navbar-lg-contact-btn"> | </span>
-            <a href="https://github.com/twentyfive21/bakery" target="_blank"
-              id="navbar-lg-contact-btn">
-              contact us
-            </a>
-            <a href="https://github.com/twentyfive21/bakery" target="_blank"
-              class="navbar-contact-btn">
-              contact us
-            </a>
-          </div>
-        </div>
+        <a href="https://github.com/twentyfive21/bakery" target="_blank" class="navbar-contact-btn">
+          contact us
+        </a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
+
 
     <!--*NAV BAR END*-->
 
@@ -248,72 +253,72 @@
     </div>
     <!--* CAROUSEL END *-->
 
-    <!--*FORM NEWSLETTER START*-->
 
-    <div class="card text-center border-0 py-5">
-      <div class="card-body">
-        <h2 class="card-title fw-bold fs-1 newsletter-header">Join Our
-          Newsletter</h2>
-        <p class="card-text py-3 fs-5 newsletter-text">Stay up to date on the
-          latest news and openings, menu items and
-          more.</p>
-        <div class="container vstack gap-3 align-items-center">
-          <div class="input-group flex-nowrap w-75">
-            <input type="text" class="form-control border-dark-subtle rounded-3"
-              placeholder="First Name"
-              aria-label="Username" aria-describedby="addon-wrapping">
-          </div>
-          <div class="input-group flex-nowrap w-75">
-            <input type="text" class="form-control border-dark-subtle rounded-3"
-              placeholder="Last Name"
-              aria-label="Username" aria-describedby="addon-wrapping">
-          </div>
-          <div class="input-group flex-nowrap w-75">
-            <input type="email"
-              class="form-control border-dark-subtle rounded-3"
-              placeholder="Email"
-              aria-label="Username" aria-describedby="addon-wrapping">
-          </div>
-        </div>
 
-      </div>
-      <div
-        class="container d-flex align-items-center justify-content-center flex-column">
-        <div class="form-check w-auto">
-          <input class="form-check-inpu" type="checkbox" value
-            id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate">
-            I have read and agree to your Terms of Use and Privacy Policy
-          </label>
-        </div>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn mt-3 newsletter-button"
-          data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          Subscribe
-        </button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-          data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0 m-4">
-                <p class="subscribe-message">🎉 Thank you for Subscribing! 🎉<br>Check
-                  your email for special coupons and
-                  events.</p>
-                <button type="button" class="btn modal-button-click"
-                  data-bs-dismiss="modal">Got it!</button>
-              </div>
+  <!--*FORM NEWSLETTER*-->
 
+<div class="card text-center border-0 py-5">
+    <div class="card-body">
+        <h2 class="card-title fw-bold fs-1 newsletter-header">Join Our Newsletter</h2>
+        <p class="card-text py-3 fs-5 newsletter-text">Stay up to date on the latest news and openings, menu items and
+            more.</p>
+        <form id="newsletterForm" class="needs-validation" novalidate>
+            <div class="container vstack gap-3 align-items-center">
+                <div class="input-group flex-nowrap w-75">
+                    <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="First Name"
+                        aria-label="First Name" aria-describedby="addon-wrapping" required>
+                    <div class="invalid-feedback">Please enter your first name.</div>
+                </div>
+                <div class="input-group flex-nowrap w-75">
+                    <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="Last Name"
+                        aria-label="Last Name" aria-describedby="addon-wrapping" required>
+                    <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+                <div class="input-group flex-nowrap w-75">
+                    <input type="email" class="form-control border-dark-subtle rounded-3" placeholder="Email"
+                        aria-label="Email" aria-describedby="addon-wrapping" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                  <div class="form-check w-auto mt-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required>
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                    I have read and agree to your Terms of Use and Privacy Policy
+                </label>
+                <div class="invalid-feedback">You must agree to the terms and privacy policy.</div>
+            </div>
             </div>
 
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mt-3 newsletter-button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop" id="subscribeBtn" disabled>
+                Subscribe
+            </button>
+        </form>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-0 m-4">
+              <p class="subscribe-message">🎉  Thank you for Subscribing!  🎉<br>Check your email for special coupons and
+                events.</p>
+              <button type="button" class="btn modal-button-click" data-bs-dismiss="modal">Got it!</button>
+            </div>
+            <!-- <div class="modal-footer border-0 d-flex justify-content-center">
+    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+  </div> -->
           </div>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <!--*FORM NEWSLETTER END*-->
+
+  <!--*FORM NEWSLETTER END*-->
 
     <!--*FOOTER SECTION START*-->
 
