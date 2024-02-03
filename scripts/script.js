@@ -13,8 +13,7 @@ hoverTexts.forEach((aLink) => {
   });
 });
 
-
-// main page carousel function 
+// main page carousel function
 sliderImg.innerHTML = data.pastry.items
   .map((img, index) => {
     // added index to add active class else carousel won't appear
@@ -25,20 +24,24 @@ sliderImg.innerHTML = data.pastry.items
         </div>`;
   })
   .join("");
-  // joined all strings else , will appear in the document
+// joined all strings else , will appear in the document
 
-  // confetti code
-  const confettiButton = document.querySelector('.confetti');
-  const canvas = document.querySelector('.canvas');
+// Confetti function
+const confettiButton = document.querySelector(".confetti");
+const canvas = document.querySelector(".canvas");
 
+const jsConfetti = new JSConfetti();
 
-  const jsConfetti = new JSConfetti()
-
-  confettiButton.addEventListener('click', ()=>{
-    jsConfetti.addConfetti({
-      confettiColors: [
-        '#395542', '#E1C16E', '#f1dab2', '#ff85a1', '#fbb1bd', '#7B3F00', 'white',
-      ],
-    })
-  })
-
+confettiButton.addEventListener("click", () => {
+  jsConfetti.addConfetti({
+    confettiColors: [
+      "#395542",
+      "#E1C16E",
+      "#f1dab2",
+      "#ff85a1",
+      "#fbb1bd",
+      "#7B3F00",
+      "white",
+    ],
+  });
+});
