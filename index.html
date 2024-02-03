@@ -59,16 +59,19 @@
 
     <!--*HER0 SECTION START*-->
     <div class="video-hero-container">
+
       <video autoplay loop muted playsinline reverse>
         <source src="./images/menu-headers/videos/header-video.mp4"
           type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
+      <canvas class="canvas">
+      </canvas>
       <div class="content">
         <img src="/images/menu-headers/footer-logo.svg" alt="hero-logo" />
         <h2>Freshly Baked, Everyday</h2>
-        <button><a href="./menus.html?q=bread">View Menu</a></button>
+        <button><a href="./menus.html?q=bread">View Menu</a></button><br>
+        <button class="confetti">Surprise</button>
       </div>
     </div>
 
@@ -414,6 +417,7 @@
       crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e36fb19258.js"
       crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
   </body>
 
 </html>
