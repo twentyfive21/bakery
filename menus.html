@@ -13,49 +13,54 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid header-container-padding">
-        <a href="/index.html">
-          <img
-            src="./images/main-page/header-dark.png"
-            alt="logo"
-            class="header-logo"
-          />
+    <!--*NAV BAR START*-->
+   <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid header-container-padding">
+    
+    <!-- Logo on the far left -->
+    <a href="/index.html" class="navbar-brand">
+      <img src="./images/main-page/header-dark.png" alt="logo" class="header-logo" />
+    </a>
+
+    <!-- Hamburger button for mobile -->
+    <button class="navbar-toggler header-hamburger" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      
+      <!-- URLs in the middle -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-nav-ul justify-content-around">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/menus.html?q=bread">Breads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus.html?q=cakes">Cakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus.html?q=coffee">Beverages</a>
+        </li>
+      </ul>
+
+      <!-- Contact us on the far right -->
+      <div class="navbar-text contact-us-green">
+        <span id="navbar-lg-contact-btn"> | </span>
+        <a href="https://github.com/twentyfive21/bakery" target="_blank" id="navbar-lg-contact-btn">
+          contact us
         </a>
-        <button
-          class="navbar-toggler header-hamburger"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-ul">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/menus.html?q=bread"
-                >Breads</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/menus.html?q=cakes">Cakes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/menus.html?q=coffee">Beverages</a>
-            </li>
-          </ul>
-          <div class="navbar-text contact-us-green">
-            <span> | </span>
-            <a href="https://github.com/twentyfive21/bakery" target="_blank">
-              contact us
-            </a>
-          </div>
-        </div>
+        <a href="https://github.com/twentyfive21/bakery" target="_blank" class="navbar-contact-btn">
+          contact us
+        </a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
+
+
+    <!--*NAV BAR END*-->
+
 
     <!--**MENU HERO SECTION**-->
 
@@ -129,132 +134,94 @@
     
     <!--* SELECTED MENU ITEMS END *-->
 
-    <!--*FORM NEWSLETTER*-->
+    
 
-    <div class="card text-center border-0 py-5">
-      <div class="card-body">
-        <h2 class="card-title fw-bold fs-1 newsletter-header">
-          Join Our Newsletter
-        </h2>
-        <p class="card-text py-3 fs-5 newsletter-text">
-          Stay up to date on the latest news and openings, menu items and more.
-        </p>
-        <div class="container vstack gap-3 align-items-center">
-          <div class="input-group flex-nowrap w-75">
-            <input
-              type="text"
-              class="form-control border-dark-subtle rounded-3"
-              placeholder="First Name"
-              aria-label="Username"
-              aria-describedby="addon-wrapping"
-            />
-          </div>
-          <div class="input-group flex-nowrap w-75">
-            <input
-              type="text"
-              class="form-control border-dark-subtle rounded-3"
-              placeholder="Last Name"
-              aria-label="Username"
-              aria-describedby="addon-wrapping"
-            />
-          </div>
-          <div class="input-group flex-nowrap w-75">
-            <input
-              type="email"
-              class="form-control border-dark-subtle rounded-3"
-              placeholder="Email"
-              aria-label="Username"
-              aria-describedby="addon-wrapping"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        class="container d-flex align-items-center justify-content-center flex-column"
-      >
-        <div class="form-check w-auto">
-          <input
-            class="form-check-inpu"
-            type="checkbox"
-            value=""
-            id="flexCheckIndeterminate"
-          />
-          <label class="form-check-label" for="flexCheckIndeterminate">
-            I have read and agree to your Terms of Use and Privacy Policy
-          </label>
-        </div>
-        <!-- Button trigger modal -->
-        <button
-          type="button"
-          class="btn mt-3 newsletter-button"
-          data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop"
-        >
-          Subscribe
-        </button>
 
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="staticBackdrop"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0 m-4">
-                <p class="subscribe-message">
-                  🎉 Thank you for Subscribing! 🎉<br />Check your email for
-                  special coupons and events.
-                </p>
-                <button
-                  type="button"
-                  class="btn modal-button-click"
-                  data-bs-dismiss="modal"
-                >
-                  Got it!
-                </button>
-              </div>
-              <!-- <div class="modal-footer border-0 d-flex justify-content-center">
+
+  <!--*FORM NEWSLETTER*-->
+
+<div class="card text-center border-0 py-5">
+    <div class="card-body">
+        <h2 class="card-title fw-bold fs-1 newsletter-header">Join Our Newsletter</h2>
+        <p class="card-text py-3 fs-5 newsletter-text">Stay up to date on the latest news and openings, menu items and
+            more.</p>
+        <form id="newsletterForm" class="needs-validation" novalidate>
+            <div class="container vstack gap-3 align-items-center">
+                <div class="input-group flex-nowrap w-75">
+                    <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="First Name"
+                        aria-label="First Name" aria-describedby="addon-wrapping" required>
+                    <div class="invalid-feedback">Please enter your first name.</div>
+                </div>
+                <div class="input-group flex-nowrap w-75">
+                    <input type="text" class="form-control border-dark-subtle rounded-3" placeholder="Last Name"
+                        aria-label="Last Name" aria-describedby="addon-wrapping" required>
+                    <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+                <div class="input-group flex-nowrap w-75">
+                    <input type="email" class="form-control border-dark-subtle rounded-3" placeholder="Email"
+                        aria-label="Email" aria-describedby="addon-wrapping" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                  <div class="form-check w-auto mt-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required>
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                    I have read and agree to your Terms of Use and Privacy Policy
+                </label>
+                <div class="invalid-feedback">You must agree to the terms and privacy policy.</div>
+            </div>
+            </div>
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn mt-3 newsletter-button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop" id="subscribeBtn" disabled>
+                Subscribe
+            </button>
+        </form>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-0 m-4">
+              <p class="subscribe-message">🎉  Thank you for Subscribing!  🎉<br>Check your email for special coupons and
+                events.</p>
+              <button type="button" class="btn modal-button-click" data-bs-dismiss="modal">Got it!</button>
+            </div>
+            <!-- <div class="modal-footer border-0 d-flex justify-content-center">
     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
   </div> -->
-            </div>
           </div>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <!--**FOOTER SECTION**-->
+
+  <!--*FORM NEWSLETTER END*-->
+
+   <!--*FOOTER SECTION START*-->
+
     <div class="container-fluid footer-bg custom-footer">
       <footer
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top"
-      >
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 border-top">
         <div class="col mb-3">
-          <a
-            href="/index.html"
-            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-          >
-            <img
-              src="/images/menu-headers/footer-logo.svg"
-              alt="tous les jours logo"
-            />
+          <a href="/index.html"
+            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="/images/menu-headers/footer-logo.svg"
+              alt="tous les jours logo" class="footer-logo-img" />
           </a>
-          <a href="https://www.facebook.com/TousLesJoursUSA/" target="_blank"
-            ><i class="fa-brands fa-facebook" style="color: #ffffff"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/touslesjoursusa/?hl=en"
-            target="_blank"
-            ><i class="fa-brands fa-square-instagram" style="color: #ffffff"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/company/cj-foodville-usa-inc/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
-          ></a>
+          <a href="https://www.facebook.com/TousLesJoursUSA/" target="_blank"><i
+              class="fa-brands fa-facebook"
+              style="color: #ffffff"></i></a>
+          <a href="https://www.instagram.com/touslesjoursusa/?hl=en"
+            target="_blank"><i
+              class="fa-brands fa-square-instagram" style="color: #ffffff"></i></a>
+          <a href="https://www.linkedin.com/company/cj-foodville-usa-inc/"
+            target="_blank"><i
+              class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
         </div>
 
         <div class="col mb-3"></div>
@@ -263,13 +230,13 @@
           <h5 class="footer-header-gold">Bakery</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Bread</a>
+              <a href="/menus.html?q=bread" class="p-0">Bread</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Cakes</a>
+              <a href="/menus.html?q=cakes" class="p-0">Cakes</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Pastry</a>
+              <a href="/menus.html?q=pastry" class="p-0">Pastry</a>
             </li>
           </ul>
         </div>
@@ -278,13 +245,13 @@
           <h5 class="footer-header-gold">Beverages</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Coffee</a>
+              <a href="/menus.html?q=coffee" class="p-0">Coffee</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Tea & More</a>
+              <a href="/menus.html?q=tea" class="p-0">Tea & More</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="/menus.html" class="p-0">Blended</a>
+              <a href="/menus.html?q=blended" class="p-0">Blended</a>
             </li>
           </ul>
         </div>
@@ -296,24 +263,21 @@
               <a href="/index.html" class="p-0">Home</a>
             </li>
             <li class="nav-item mb-2">
-              <a
-                href="https://github.com/twentyfive21/bakery"
-                target="_blank"
-                class="p-0"
-                >Contact Us</a
-              >
+              <a href="https://github.com/twentyfive21/bakery" target="_blank"
+                class="p-0">Contact Us</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="p-0 non-hover"
-                >&copy; 2024 TOUS les JOURS International Corp. All Rights
-                Reserved.</a
-              >
+              <a href="#" class="p-0 non-hover">&copy; 2024 TOUS les JOURS
+                International Corp. All Rights
+                Reserved.</a>
             </li>
           </ul>
         </div>
         <div class="hr-line-footer"></div>
       </footer>
     </div>
+
+    <!--*FOOTER SECTION END*-->
     <script type="module" src="./scripts/script.js"></script>
     <script type="module" src="./scripts/data.js"></script>
     <script type="module" src="./scripts/menu.js"></script>

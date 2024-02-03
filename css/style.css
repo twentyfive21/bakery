@@ -328,6 +328,11 @@ a {
   text-transform: uppercase;
 }
 
+.newsletter-button:disabled {
+    background-color: darken(var(--tlj-green)); /* Adjust the percentage as needed */
+    color: var(--tlj-green);
+}
+
 .newsletter-button:hover{
   background-color: var(--tlj-green);
    color: var(--tlj-gold);
@@ -475,15 +480,19 @@ a {
 
 /**THIRD PAGE HTML DETAILS CSS START!!!**/
 
-
+.detail-menu-item-resize{
+  height: 80vh;
+  width: 800;
+  object-fit: cover;
+}
 
 .details-jumbotron {
   position: relative;
-  background-image: url("https://www.dispatch.com/gcdn/presto/2023/03/03/NCOD/c95d61f1-d68d-4d8b-8ed0-b8de02a65470-06_TOUS_LES_JOURS_CLH001.jpg");
+  background-image: url("https://d1ralsognjng37.cloudfront.net/00e27e33-560a-4f1a-bb8f-7aa985b95777.jpeg");
   height: 25vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   margin-top: 50px;
 }
 
@@ -506,7 +515,7 @@ thead tr th.bold-tlj-text-detail {
   color: var(--tlj-green);
   letter-spacing: .05em;
   -webkit-text-stroke-color: var(--tlj-green);
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 600;
   font-family: "Playfair";
 }
@@ -536,7 +545,45 @@ thead tr th.bold-tlj-text-detail {
   display: flex;
 }
 
+.height-100{
+    height:100vh;
+}
 
+.review-card{
+    width:580px;
+    border:none;
+    height:280px;
+}
+
+.ratings{
+    margin-right:10px;
+}
+
+.ratings i{
+    
+    color:#cecece;
+    font-size:32px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.review-count{
+    font-weight:400;
+    margin-bottom:2px;
+    font-size:24px !important;
+}
+
+.small-ratings i{
+  color:#cecece;   
+}
+
+.review-stat{
+    font-weight:300;
+    font-size:18px;
+    margin-bottom:2px;
+}
 
 
 
@@ -736,6 +783,19 @@ footer .col a {
     margin-bottom: 1px;
   }
  }
+
+
+ /**DETAILS HTML **/
+@media only screen and (max-width: 991px) {
+.detail-menu-item-resize{
+  height: auto;
+  width: auto;
+}
+
+}
+
+
+
 /** footer **/
 @media only screen and (max-width: 990px) {
 .footer-logo-img{

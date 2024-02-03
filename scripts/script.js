@@ -4,16 +4,12 @@ const hoverTexts = document.querySelectorAll(".category-hover-text");
 const sliderImg = document.querySelector(".carousel-inner");
 
 hoverTexts.forEach((aLink) => {
-  // aLink.addEventListener("mouseover", ()=>{
-  //     aLink.style.display = "none";
-  // })
-
   aLink.addEventListener("mouseover", () => {
     aLink.style.display = "block";
   });
 });
 
-// main page carousel function
+// *** main page carousel function ***
 sliderImg.innerHTML = data.pastry.items
   .map((img, index) => {
     // added index to add active class else carousel won't appear
@@ -26,7 +22,7 @@ sliderImg.innerHTML = data.pastry.items
   .join("");
 // joined all strings else , will appear in the document
 
-// Confetti function
+// *** Confetti function ***
 const confettiButton = document.querySelector(".confetti");
 const canvas = document.querySelector(".canvas");
 
@@ -45,3 +41,18 @@ confettiButton.addEventListener("click", () => {
     ],
   });
 });
+
+// *** Enable/Disable Subscribe button based on form validity ***
+   document.getElementById('newsletterForm').addEventListener('input', function () {
+        const form = this;
+        const subscribeBtn = document.getElementById('subscribeBtn');
+        subscribeBtn.disabled = !form.checkValidity();
+    });
+
+    document.getElementById('subscribeBtn').addEventListener('click', function () {
+        const form = document.getElementById('newsletterForm');
+        if (form.checkValidity()) {
+            form.reset(); // Clear form values if the form is valid
+        }
+    });
+
