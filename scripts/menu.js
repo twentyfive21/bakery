@@ -29,13 +29,19 @@ import data from './data.js';
 
   // function for selected menu items 
   const selectedMenuItems = document.querySelector('.selected-menu-box');
+
+  // In URLs, the ampersand (&) is a reserved character and is commonly used
+  // as a delimiter between different parameters. If you want to include special
+  // characters, like the ampersand, in a URL parameter value, you should URL encode it.
   
   selectedMenuItems.innerHTML = data[menuType]?.items?.map((item)=>{
+    const encodedItemName = encodeURIComponent(item.name); 
+
     return `<div class="col category-image-card">
-              <div class="text-center">
+              <a href="details.html?q=${menuType}&f=${encodedItemName}" class="text-center">
               <img src="${item.image}" class="rounded" alt="${item.name}" />
               <p>${item.name}</p>
-              </div>
+              </a>
             </div>`
   }).join('')
 

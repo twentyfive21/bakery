@@ -27,3 +27,18 @@ sliderImg.innerHTML = data.pastry.items
   .join("");
   // joined all strings else , will appear in the document
 
+  // confetti code
+  const confettiButton = document.querySelector('.confetti');
+  const canvas = document.querySelector('.canvas');
+
+
+  const jsConfetti = new JSConfetti()
+
+  confettiButton.addEventListener('click', ()=>{
+    jsConfetti.addConfetti({
+      confettiColors: [
+        '#395542', '#E1C16E', '#f1dab2', '#ff85a1', '#fbb1bd', '#7B3F00', 'white',
+      ],
+    })
+  })
+
