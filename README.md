@@ -1,6 +1,6 @@
 # Bakery Website with JavaScript & Bootstrap
 --- 
-## View the site live here : 
+## View the site live here : [Click Here](https://tous-les-jours.netlify.app/)
 # Learning Outcome 
 * This collaborative project aims to enhance our proficiency in JavaScript, particularly in DOM manipulation, and to reinforce our skills in utilizing Bootstrap for responsive and visually appealing web design. As part of our review, we will create a bakery website specializing in selling cakes and drinks.
 --- 
